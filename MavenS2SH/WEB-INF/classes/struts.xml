@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+	<!-- 设置是否为开发模式，true为开发模式，每次请求都会重新加载资源文件，性能较低 -->
+	<!-- <constant name="struts.devMode" value="true" /> -->
+	<package name="demo" extends="struts-default">
+		<action name="memberValidation" class="cn.wqy.action.MemberValidation"
+			method="execute">
+			<result name="success" type="redirect">/main.jsp</result>
+			<result name="fail">/login.jsp</result>
+		</action>
+		<action name="memberRegistration" class="cn.wqy.action.MemberRegistration">
+			<result name="success" type="redirect">/registerSuccess.jsp</result>
+			<result name="fail">/register.jsp</result>
+		</action>
+		<action name="membersAction" class="cn.wqy.action.MembersAction">
+			<result name="success">/membersInfoManage.jsp</result>
+			<result name="back">/memberInfoManage.jsp</result>
+			<result name="update">/memberInfoManage.jsp</result>
+			<result name="listRoom">/membersInfoManage.jsp</result>
+		</action>
+		<action name="logoutAction" class="cn.wqy.action.LogoutAction">
+			<result name="logout" type="redirect">/login.jsp</result>
+		</action>
+		<action name="labAction" class="cn.wqy.action.LabAction">
+			<result name="show">/labInfo.jsp</result>
+			<result name="update">/labInfo.jsp</result>
+			<result name="none">/labInfo.jsp</result>
+			<result name="cancel">/myReserveInfo.jsp</result>
+			<result name="listMyReserve">/myReserveInfo.jsp</result>
+			<result name="listMyReserveFig">/myReserveInfo.jsp</result>
+		</action>
+		<action name="secureAction" class="cn.wqy.action.SecureAction">
+			<result name="refreshCode">/mySecureCode.jsp</result>
+			<result name="fail">/mySecureCode.jsp</result>
+			<result name="change">/mySecureEmailChange.jsp</result>
+			<result name="create">/mySecureEmailCreate.jsp</result>
+			<result name="pending">/mySecureEmailTrans.jsp</result>
+			<result name="changePending">/mySecureEmailChangeTrans.jsp</result>
+			<result name="EmailSentSuccess">/mySecureEmailTrans.jsp</result>
+			<result name="EmailSentFail">/mySecureEmailCreate.jsp</result>
+			<result name="confirmed">/confirmed.jsp</result>
+			<result name="notConfirmed">/notConfirmed.jsp</result>
+			<result name="duplicateConfirm">/mySecureEmailChange.jsp</result>
+			<result name="emailError">/emailToChangeCodeTrans.jsp</result>
+			<result name="emailSet" type="redirect">/emailToChangeCodeSentSucc.jsp
+			</result>
+			<result name="allowCodeChange">/emailToChangeCode.jsp</result>
+			<result name="etcFail">/emailToChangeCode.jsp</result>
+			<result name="etcSucc">/emailToChangeCodeSucc.jsp</result>
+		</action>
+	</package>
+</struts>    
