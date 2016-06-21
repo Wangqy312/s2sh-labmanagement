@@ -4,4 +4,4 @@
 本系统还提供了安全密码修改和安全邮箱的修改，可以实现利用安全邮箱找回密码的功能。
 
 下图是登陆主界面：
-![image](https://github.com/Wangqy312/s2sh-labmanagement/tree/master/raw/1.jpg)
+![image](https://raw.githubusercontent.com/Wangqy312/s2sh-labmanagement/master/raw/1.jpg)
