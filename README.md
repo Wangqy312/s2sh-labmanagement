@@ -13,7 +13,7 @@
 ![image](https://raw.githubusercontent.com/Wangqy312/s2sh-labmanagement/master/raw/1.jpg)
 
 下图是登录成功，管理系统操作主界面：
-![image](https://raw.githubusercontent.com/Wangqy312/s2sh-labmanagement/master/raw/2.jpg)
+![image](https://raw.githubusercontent.com/Wangqy312/s2sh-labmanagement/master/raw/1.jpg)
 
 
 
