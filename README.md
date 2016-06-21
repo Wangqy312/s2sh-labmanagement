@@ -3,5 +3,18 @@
 
 本系统还提供了安全密码修改和安全邮箱的修改，可以实现利用安全邮箱找回密码的功能。
 
+项目特点：
+1、struts2,hibernate,spring构建项目后台实现MVC
+2、人员信息存储在MySQL数据库中,通过hibernate完成和持久层的交互
+3、实现了javax.mail发送安全邮件修改密码
+
+
 下图是登陆主界面：
 ![image](https://raw.githubusercontent.com/Wangqy312/s2sh-labmanagement/master/raw/1.jpg)
+
+下图是登录成功，管理系统操作主界面：
+![image](https://raw.githubusercontent.com/Wangqy312/s2sh-labmanagement/master/raw/2.jpg)
+
+
+
+
