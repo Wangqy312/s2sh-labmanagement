@@ -39,7 +39,8 @@
 4、存储安全邮箱设置与否的表 secureemail，并与studentaccount表有外键关联
 5、每次注册成功会自动生成一个reserveInfoxxx表
 
-将整套程序拷贝至Tomcat的webapps目录下启动tomcat，同时在正确配置数据库的情况下，输入http://152j1383d8.imwork.net/MavenS2SH/即可访问（注册了一个简单域名）
+将整套程序拷贝至Tomcat的webapps目录下启动tomcat，同时在正确配置数据库的情况下，输入http://152j1383d8.imwork.net/MavenS2SH/
+即可访问（注册了一个简单域名）
 
 
 
